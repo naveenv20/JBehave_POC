@@ -1,0 +1,41 @@
+
+(com/sample/JBehavePOC/Utilities/customercare.story)
+Narrative:
+In order to check the customer care page
+As a Test team
+I want to login into flipkart and needs to navigate to customer care page and check
+Scenario: customer care page checks
+Examples:
+Given customercarecheck test is initialised
+Given The browser <browsertype> is opened
+Then User opens the <URL>
+Then user clicks on the customercare link
+Then user select the case as <case_type>
+Then user selects the <question_number> and checks the question text as <Question_text>
+Then user ends the test case and closed the browser
+
+|browsertype|URL|case_type|question_number|Question_text|
+|Firefox|http://www.flipkart.com/|Offer Redemption|4|I haven't yet received my Cashback|
+|Firefox|http://www.flipkart.com/|Offer Redemption|2|I haven't yet received my Cashback|
+
+Example: {browsertype=Firefox, URL=http://www.flipkart.com/, case_type=Offer Redemption, question_number=4, Question_text=I haven't yet received my Cashback}
+Given customercarecheck test is initialised
+Given The browser Firefox is opened
+Then User opens the http://www.flipkart.com/
+Then user clicks on the customercare link
+Then user select the case as Offer Redemption
+Then user selects the 4 and checks the question text as I haven't yet received my Cashback (FAILED)
+(java.lang.IndexOutOfBoundsException: Index: 3, Size: 3)
+Then user ends the test case and closed the browser (NOT PERFORMED)
+
+Example: {browsertype=Firefox, URL=http://www.flipkart.com/, case_type=Offer Redemption, question_number=2, Question_text=I haven't yet received my Cashback}
+Given customercarecheck test is initialised
+Given The browser Firefox is opened
+Then User opens the http://www.flipkart.com/
+Then user clicks on the customercare link
+Then user select the case as Offer Redemption
+Then user selects the 2 and checks the question text as I haven't yet received my Cashback
+Then user ends the test case and closed the browser
+
+
+

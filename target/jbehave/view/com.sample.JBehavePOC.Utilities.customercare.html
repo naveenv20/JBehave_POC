@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>com.sample.JBehavePOC.Utilities.customercare</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">com/sample/JBehavePOC/Utilities/customercare.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> check the customer care page</div>
+<div class="element asA"><span class="keyword asA">As a</span> Test team</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> login into flipkart and needs to navigate to customer care page and check</div>
+</div>
+<div class="scenario">
+<h2>Scenario: customer care page checks</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given customercarecheck test is initialised</div>
+<div class="step">Given The browser &lt;browsertype&gt; is opened</div>
+<div class="step">Then User opens the &lt;URL&gt;</div>
+<div class="step">Then user clicks on the customercare link</div>
+<div class="step">Then user select the case as &lt;case_type&gt;</div>
+<div class="step">Then user selects the &lt;question_number&gt; and checks the question text as &lt;Question_text&gt;</div>
+<div class="step">Then user ends the test case and closed the browser</div>
+<table>
+<thead>
+<tr>
+<th>browsertype</th><th>URL</th><th>case_type</th><th>question_number</th><th>Question_text</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Firefox</td><td>http://www.flipkart.com/</td><td>Offer Redemption</td><td>4</td><td>I haven't yet received my Cashback</td></tr>
+<tr>
+<td>Firefox</td><td>http://www.flipkart.com/</td><td>Offer Redemption</td><td>2</td><td>I haven't yet received my Cashback</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {browsertype=Firefox, URL=http://www.flipkart.com/, case_type=Offer Redemption, question_number=4, Question_text=I haven't yet received my Cashback}</h3>
+<div class="step successful">Given customercarecheck test is initialised</div>
+<div class="step successful">Given The browser <span class="step parameter">Firefox</span> is opened</div>
+<div class="step successful">Then User opens the <span class="step parameter">http://www.flipkart.com/</span></div>
+<div class="step successful">Then user clicks on the customercare link</div>
+<div class="step successful">Then user select the case as <span class="step parameter">Offer Redemption</span></div>
+<div class="step failed">Then user selects the <span class="step parameter">4</span> and checks the question text as <span class="step parameter">I haven't yet received my Cashback</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.IndexOutOfBoundsException: Index: 3, Size: 3</span></div>
+<div class="step notPerformed">Then user ends the test case and closed the browser <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+
+<h3 class="example">Example: {browsertype=Firefox, URL=http://www.flipkart.com/, case_type=Offer Redemption, question_number=2, Question_text=I haven't yet received my Cashback}</h3>
+<div class="step successful">Given customercarecheck test is initialised</div>
+<div class="step successful">Given The browser <span class="step parameter">Firefox</span> is opened</div>
+<div class="step successful">Then User opens the <span class="step parameter">http://www.flipkart.com/</span></div>
+<div class="step successful">Then user clicks on the customercare link</div>
+<div class="step successful">Then user select the case as <span class="step parameter">Offer Redemption</span></div>
+<div class="step successful">Then user selects the <span class="step parameter">2</span> and checks the question text as <span class="step parameter">I haven't yet received my Cashback</span></div>
+<div class="step successful">Then user ends the test case and closed the browser</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

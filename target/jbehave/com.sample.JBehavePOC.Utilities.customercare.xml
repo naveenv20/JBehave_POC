@@ -1,0 +1,41 @@
+<story path="com/sample/JBehavePOC/Utilities/customercare.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">check the customer care page</inOrderTo>
+  <asA keyword="As a">Test team</asA>
+  <iWantTo keyword="I want to">login into flipkart and needs to navigate to customer care page and check</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="customer care page checks">
+<examples keyword="Examples:">
+<step>Given customercarecheck test is initialised</step>
+<step>Given The browser &lt;browsertype&gt; is opened</step>
+<step>Then User opens the &lt;URL&gt;</step>
+<step>Then user clicks on the customercare link</step>
+<step>Then user select the case as &lt;case_type&gt;</step>
+<step>Then user selects the &lt;question_number&gt; and checks the question text as &lt;Question_text&gt;</step>
+<step>Then user ends the test case and closed the browser</step>
+<parameters>
+<names><name>browsertype</name><name>URL</name><name>case_type</name><name>question_number</name><name>Question_text</name></names>
+<values><value>Firefox</value><value>http://www.flipkart.com/</value><value>Offer Redemption</value><value>4</value><value>I haven&apos;t yet received my Cashback</value></values>
+<values><value>Firefox</value><value>http://www.flipkart.com/</value><value>Offer Redemption</value><value>2</value><value>I haven&apos;t yet received my Cashback</value></values>
+</parameters>
+
+<example keyword="Example:">{browsertype=Firefox, URL=http://www.flipkart.com/, case_type=Offer Redemption, question_number=4, Question_text=I haven&apos;t yet received my Cashback}</example>
+<step outcome="successful">Given customercarecheck test is initialised</step>
+<step outcome="successful">Given The browser <parameter>Firefox</parameter> is opened</step>
+<step outcome="successful">Then User opens the <parameter>http://www.flipkart.com/</parameter></step>
+<step outcome="successful">Then user clicks on the customercare link</step>
+<step outcome="successful">Then user select the case as <parameter>Offer Redemption</parameter></step>
+<step outcome="failed" keyword="FAILED">Then user selects the <parameter>4</parameter> and checks the question text as <parameter>I haven&apos;t yet received my Cashback</parameter><failure>java.lang.IndexOutOfBoundsException: Index: 3, Size: 3</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then user ends the test case and closed the browser</step>
+
+<example keyword="Example:">{browsertype=Firefox, URL=http://www.flipkart.com/, case_type=Offer Redemption, question_number=2, Question_text=I haven&apos;t yet received my Cashback}</example>
+<step outcome="successful">Given customercarecheck test is initialised</step>
+<step outcome="successful">Given The browser <parameter>Firefox</parameter> is opened</step>
+<step outcome="successful">Then User opens the <parameter>http://www.flipkart.com/</parameter></step>
+<step outcome="successful">Then user clicks on the customercare link</step>
+<step outcome="successful">Then user select the case as <parameter>Offer Redemption</parameter></step>
+<step outcome="successful">Then user selects the <parameter>2</parameter> and checks the question text as <parameter>I haven&apos;t yet received my Cashback</parameter></step>
+<step outcome="successful">Then user ends the test case and closed the browser</step>
+</examples>
+</scenario>
+</story>

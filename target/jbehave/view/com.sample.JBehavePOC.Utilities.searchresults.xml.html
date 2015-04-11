@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>com.sample.JBehavePOC.Utilities.searchresults</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="com/sample/JBehavePOC/Utilities/searchresults.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">search into flipkart site</inOrderTo>
+  <asA keyword="As a">Test team</asA>
+  <iWantTo keyword="I want to">login into flipkart and check the search and view item functionality</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Search for items in flipkart">
+<examples keyword="Examples:">
+<step>Given searchresults test is initialised</step>
+<step>Given The browser &lt;browsertype&gt; is opened</step>
+<step>Then User opens the &lt;URL&gt;</step>
+<step>Then the user logs into the system with the &lt;username&gt; and &lt;password&gt;</step>
+<step>Then user searhces for &lt;searchvalue&gt;</step>
+<step>Then selects an item from the search results</step>
+<step>And View the item</step>
+<step>Then user ends the test case and closed the browser</step>
+<parameters>
+<names><name>browsertype</name><name>URL</name><name>username</name><name>password</name><name>searchvalue</name></names>
+<values><value>Chrome</value><value>http://www.flipkart.com/</value><value>naveenkv20@gmail.com</value><value>test123</value><value>timex watch</value></values>
+</parameters>
+
+<example keyword="Example:">{browsertype=Chrome, URL=http://www.flipkart.com/, username=naveenkv20@gmail.com, password=test123, searchvalue=timex watch}</example>
+<step outcome="successful">Given searchresults test is initialised</step>
+<step outcome="successful">Given The browser <parameter>Chrome</parameter> is opened</step>
+<step outcome="successful">Then User opens the <parameter>http://www.flipkart.com/</parameter></step>
+<step outcome="successful">Then the user logs into the system with the <parameter>naveenkv20@gmail.com</parameter> and <parameter>test123</parameter></step>
+<step outcome="successful">Then user searhces for <parameter>timex watch</parameter></step>
+<step outcome="successful">Then selects an item from the search results</step>
+<step outcome="successful">And View the item</step>
+<step outcome="successful">Then user ends the test case and closed the browser</step>
+</examples>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

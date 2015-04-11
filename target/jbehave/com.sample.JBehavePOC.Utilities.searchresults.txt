@@ -1,0 +1,32 @@
+
+(com/sample/JBehavePOC/Utilities/searchresults.story)
+Narrative:
+In order to search into flipkart site
+As a Test team
+I want to login into flipkart and check the search and view item functionality
+Scenario: Search for items in flipkart
+Examples:
+Given searchresults test is initialised
+Given The browser <browsertype> is opened
+Then User opens the <URL>
+Then the user logs into the system with the <username> and <password>
+Then user searhces for <searchvalue>
+Then selects an item from the search results
+And View the item
+Then user ends the test case and closed the browser
+
+|browsertype|URL|username|password|searchvalue|
+|Chrome|http://www.flipkart.com/|naveenkv20@gmail.com|test123|timex watch|
+
+Example: {browsertype=Chrome, URL=http://www.flipkart.com/, username=naveenkv20@gmail.com, password=test123, searchvalue=timex watch}
+Given searchresults test is initialised
+Given The browser Chrome is opened
+Then User opens the http://www.flipkart.com/
+Then the user logs into the system with the naveenkv20@gmail.com and test123
+Then user searhces for timex watch
+Then selects an item from the search results
+And View the item
+Then user ends the test case and closed the browser
+
+
+
